@@ -13,43 +13,91 @@ import {
 
 const services = [
   {
-    icon: Wifi,
+    icon: (
+      <>
+        <Wifi className="w-12 h-12 text-blue-600 mb-4" />
+      </>
+    ),
     title: "Wi-Fi Camera Security",
     description:
       "Advanced wireless surveillance solutions for comprehensive security coverage.",
   },
   {
-    icon: Shield,
+    icon: (
+      <>
+        <Shield className="w-12 h-12 text-blue-600 mb-4" />
+      </>
+    ),
     title: "Alarm System",
     description:
       "State-of-the-art alarm systems to protect your property 24/7.",
   },
   {
-    icon: Building2,
+    icon: (
+      <>
+        <Building2 className="w-12 h-12 text-blue-600 mb-4" />
+      </>
+    ),
     title: "Business Security",
     description:
       "Complete security solutions tailored for businesses of all sizes.",
   },
   {
-    icon: Flame,
+    icon: (
+      <>
+        <Flame className="w-12 h-12 text-blue-600 mb-4" />
+      </>
+    ),
     title: "Fire Detection",
     description: "Early warning systems to protect your assets and people.",
   },
   {
-    icon: Monitor,
+    icon: (
+      <>
+        <Monitor className="w-12 h-12 text-blue-600 mb-4" />
+      </>
+    ),
     title: "IT Support Services",
     description: "Comprehensive IT support for SMEs with rapid response times.",
   },
   {
-    icon: Phone,
+    icon: (
+      <>
+        <Phone className="w-12 h-12 text-blue-600 mb-4" />
+      </>
+    ),
     title: "Telecoms & Mobile",
     description:
       "Modern telecommunication solutions for seamless connectivity.",
   },
   {
-    icon: Cloud,
+    icon: (
+      <>
+        <Cloud className="w-12 h-12 text-blue-600 mb-4" />
+      </>
+    ),
     title: "Cloud Services",
     description: "Secure and scalable cloud solutions for your business needs.",
+  },
+  {
+    icon: (
+      <>
+        <img src="./img/voip.png" alt="" className="w-9 my-2" />
+      </>
+    ),
+    title: "VoIP",
+    description:
+      "Our VoIP services makes communication more accessible and affordable.",
+  },
+  {
+    icon: (
+      <>
+        <img src="./img/iot.png" alt="" className="w-9 my-2" />
+      </>
+    ),
+    title: "IoT",
+    description:
+      "Setting up secure technology infrastructure for advanced data tasks",
   },
 ];
 
@@ -58,11 +106,21 @@ const Services = () => {
     triggerOnce: true,
     threshold: 0.1,
   });
+  const [Href, HinView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   return (
-    <section id="services" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+    <section id="services" className="py-20 bg-white relative ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-[5]">
+        <motion.div
+          ref={Href}
+          initial={{ opacity: 0, y: -100 }}
+          animate={HinView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-center mb-16"
+        >
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Our Services
           </h2>
@@ -70,13 +128,13 @@ const Services = () => {
             We offer a comprehensive range of IT and security services to meet
             all your business needs
           </p>
-        </div>
+        </motion.div>
 
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {services.map((service, index) => (
@@ -87,7 +145,7 @@ const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
             >
-              <service.icon className="w-12 h-12 text-blue-600 mb-4" />
+              {service.icon}
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {service.title}
               </h3>
