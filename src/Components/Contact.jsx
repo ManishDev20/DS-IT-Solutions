@@ -24,7 +24,7 @@ const Contact = () => {
               <div className="flex items-center space-x-2">
                 <MapPin className="w-6 h-6 text-blue-600" />
                 <span className="text-gray-600">
-                  Paschim Duramari D, West Bengal 735233.
+                  Paschim Duramari D, West Bengal 735233 (India).
                 </span>
               </div>
               <div className="flex items-center space-x-2">

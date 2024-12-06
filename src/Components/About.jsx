@@ -36,7 +36,7 @@ const About = () => {
         >
           <div>
             <img
-              src="./img/team.jpg"
+              src="./img/team.webp"
               alt="Team working together"
               className="rounded-lg shadow-xl h-[350px]"
             />

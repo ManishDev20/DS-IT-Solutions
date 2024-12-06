@@ -16,38 +16,13 @@ const Navbar = () => {
     { href: "#contact", label: "Contact" },
   ];
 
-  const [logo, setLogo] = useState(1);
-
-  const toggleLogo = (id) => {
-    if (id === 1) {
-      setLogo(2);
-    } else if (id === 2) {
-      setLogo(1);
-    }
-    console.log(logo);
-  };
-
   return (
     <nav className="fixed  w-full transition-all duration-300 py-2 bg-[#091230]  z-[9999]">
       <div className="w-full mx-auto px-6 sm:px-8 lg:px-20">
         <div className="flex items-center justify-between h-16">
           <div className="flex gap-10 shrink-0 my-2">
-            <a href="#hero" className="text-2xl font-bold text-blue-600">
-              {logo === 1 ? (
-                <img
-                  onClick={() => toggleLogo(1)}
-                  src="./img/logo.png"
-                  alt=""
-                  className="w-40"
-                />
-              ) : (
-                <img
-                  onClick={() => toggleLogo(2)}
-                  src="./img/logo2.png"
-                  alt=""
-                  className="w-16"
-                />
-              )}
+            <a href="/" className="text-2xl font-bold text-blue-600">
+              <img src="./img/logo2.webp" alt="" className="w-16" />
             </a>
           </div>
 

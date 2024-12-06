@@ -9,6 +9,8 @@ import {
   Monitor,
   Phone,
   Cloud,
+  Network,
+  Cctv,
 } from "lucide-react";
 
 const services = [
@@ -18,9 +20,29 @@ const services = [
         <Wifi className="w-12 h-12 text-blue-600 mb-4" />
       </>
     ),
-    title: "Wi-Fi Camera Security",
+    title: "Wi-Fi Solutions",
     description:
-      "Advanced wireless surveillance solutions for comprehensive security coverage.",
+      " Advanced CCTV systems with high-definition cameras and remote monitoring, offering 24/7 surveillance and enhanced security for any property.",
+  },
+  {
+    icon: (
+      <>
+        <Network className="w-12 h-12 text-blue-600 mb-4" />
+      </>
+    ),
+    title: "Networking",
+    description:
+      "Comprehensive networking solutions that provide scalable, secure, and efficient infrastructure to optimize communication and ensure smooth operations",
+  },
+  {
+    icon: (
+      <>
+        <Cctv className="w-12 h-12 text-blue-600 mb-4" />
+      </>
+    ),
+    title: "CCTV",
+    description:
+      "Reliable high-speed WiFi solutions designed to deliver seamless connectivity, improved performance, and enhanced productivity for businesses and homes.",
   },
   {
     icon: (
@@ -82,7 +104,7 @@ const services = [
   {
     icon: (
       <>
-        <img src="./img/voip.png" alt="" className="w-9 my-2" />
+        <img src="./img/voip.webp" alt="" className="w-9 my-2" />
       </>
     ),
     title: "VoIP",
@@ -92,7 +114,7 @@ const services = [
   {
     icon: (
       <>
-        <img src="./img/iot.png" alt="" className="w-9 my-2" />
+        <img src="./img/iot.webp" alt="" className="w-9 my-2" />
       </>
     ),
     title: "IoT",

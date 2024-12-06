@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Phone } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import { FaWhatsapp } from "react-icons/fa";
 
 const slides = [
   {
@@ -15,7 +15,7 @@ const slides = [
       "Empowering businesses with cutting-edge technology solutions and unparalleled support",
     buttonText: "Contact Us",
     background: "from-blue-900 via-blue-800 to-blue-900",
-    image: "./img/2.png",
+    image: "./img/2.webp",
   },
   {
     title: "Secure Your Business with Smart Technology",
@@ -23,7 +23,7 @@ const slides = [
       "Comprehensive security solutions designed to protect your assets and data",
     buttonText: "Contact Us",
     background: "from-indigo-900 via-indigo-800 to-indigo-900",
-    image: "./img/3.png",
+    image: "./img/3.webp",
   },
   {
     title: "24/7 Expert IT Support",
@@ -31,7 +31,7 @@ const slides = [
       "Round-the-clock technical support to keep your business running smoothly",
     buttonText: "Contact Us",
     background: "from-purple-900 via-purple-800 to-purple-900",
-    image: "./img/contact.jpg",
+    image: "./img/contact.webp",
   },
 ];
 
@@ -84,10 +84,13 @@ const Hero = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium text-lg inline-flex items-center gap-2 transition-colors duration-300"
+                    className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-medium text-lg inline-flex items-center gap-2 transition-colors duration-300"
                   >
-                    <a href="tel:tel:+917365841234" className="flex gap-2">
-                      <Phone />
+                    <a
+                      href="https://wa.me/+35699906873/?text=Help%20me%20with"
+                      className="flex gap-2"
+                    >
+                      <FaWhatsapp className="text-3xl" />
                       {slide.buttonText}
                     </a>
                   </motion.button>
