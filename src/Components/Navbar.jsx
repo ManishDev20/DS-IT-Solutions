@@ -52,7 +52,7 @@ const Navbar = () => {
                 <FaWhatsapp className="sm:text-2xl" />
               </a>
               <a
-                href="https://wa.me/+35699906873/?text=Help%20me%20with"
+                href="https://www.linkedin.com/company/dsnetworksolutions?_l=en_US"
                 className="text-white hover:text-blue-500"
               >
                 <FaLinkedin className="sm:text-2xl" />
@@ -93,7 +93,10 @@ const Navbar = () => {
             >
               <FaFacebook className="text-3xl" />
             </a>
-            <a href="https://linkedin.com/in/" className="text-blue-500">
+            <a
+              href="https://www.linkedin.com/company/dsnetworksolutions?_l=en_US"
+              className="text-blue-500"
+            >
               <FaLinkedin className="text-3xl" />
             </a>
             <a

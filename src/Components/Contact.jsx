@@ -57,7 +57,7 @@ const Contact = () => {
             className=""
           >
             <img
-              src="./img/contact.jpg"
+              src="./img/contact.webp"
               alt=""
               className="w-[500px] shadow-xl rounded-xl"
             />
