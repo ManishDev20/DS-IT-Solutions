@@ -22,7 +22,7 @@ const services = [
     ),
     title: "Wi-Fi Solutions",
     description:
-      " Advanced CCTV systems with high-definition cameras and remote monitoring, offering 24/7 surveillance and enhanced security for any property.",
+      "Reliable high-speed WiFi solutions designed to deliver seamless connectivity, improved performance, and enhanced productivity for businesses and homes.",
   },
   {
     icon: (
@@ -42,7 +42,7 @@ const services = [
     ),
     title: "CCTV",
     description:
-      "Reliable high-speed WiFi solutions designed to deliver seamless connectivity, improved performance, and enhanced productivity for businesses and homes.",
+      "Advanced CCTV systems with high-definition cameras and remote monitoring, offering 24/7 surveillance and enhanced security for any property.",
   },
   {
     icon: (

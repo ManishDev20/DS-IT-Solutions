@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4  gap-x-0 gap-y-5 md:gap-5">
           <div className="col-span-1 space-y-5">
             <div className="flex justify-center sm:block">
-              <img src="./img/logo.webp" alt="" className="w-52" />
+              <img src="./img/logo2.webp" alt="" className="w-20" />
             </div>
             <p className="text-gray-400 text-center sm:text-left">
               Empowering businesses with innovative IT solutions.
